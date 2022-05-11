@@ -1,0 +1,130 @@
+body {
+    background-color: #dddddd;
+    color: #333333;
+    display: block;
+    margin: 0;
+    font-family: Monaco, sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.toolbar {
+    top: 0;
+    position: fixed;
+    width: 98%;
+    background-color: white;
+    overflow: hidden;
+    padding: 1vw;
+    box-shadow: 0 3px 10px #aaaaaa;
+    z-index: 5;
+}
+
+hr.line {
+    margin: .5vw 1vw;
+    border: 1px solid #777777;
+}
+
+/* Style the links inside the navigation bar */
+.toolbar a {
+    float: left;
+    color: #777777;
+    text-align: center;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.toolbar nav a {
+    float: right;
+    border-bottom: 3px solid #ffffff;
+    transition: border-bottom .35s;
+    padding: 1vw 1vw;
+}
+
+/* Change the color of links on hover */
+.toolbar nav a:hover {
+    border-bottom: 3px solid #777777;
+}
+
+/* Add a color to the active/current link */
+.toolbar a.active {
+    background-color: gray;
+    color: white;
+}
+
+.bio {
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    float: bottom;
+}
+
+.projects {
+    font-size: 1vw;
+    padding: 10vw 3vw;
+}
+
+.proj-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(min-content, max-content);
+    padding: 10px;
+}
+
+.project {
+    line-height: 2;
+    color: #333333;
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 1vw 1vw;
+    font-size: 1vw;
+    text-align: center;
+    margin: 2vw 1vw;
+    transition: background-color .5s;
+    box-shadow: 2px 3px 10px #888888;
+}
+
+.project:hover {
+    background-color: #aaaaaa;
+}
+
+.bottom-border {
+    display: block;
+    margin: auto;
+    padding: 30px 0 30px;
+    background-color: #333333;
+}
+
+.img {
+    margin: 0;
+}
+
+h2 {
+    text-shadow: .13vw .13vw deepskyblue, .26vw .26vw deeppink, .39vw .39vw gold;
+}
+
+h3 {
+    text-shadow: .13vw .13vw deepskyblue;
+}
+
+.about {
+    font-size: 1vw;
+    padding: 10vw 3vw;
+    float: bottom;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333333;
+    text-shadow: .1vw .1vw deeppink;
+}
+
+.musicrecs {
+    font-size: 1vw;
+    padding: 10vw 3vw;
+    float: bottom;
+}
+
+.proj-grid iframe {
+    padding: 1vw 1vw;
+    margin: 1vw 1vw;
+}
